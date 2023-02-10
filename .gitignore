@@ -4,3 +4,4 @@ out
 *.o
 test
 test.cpp
+main
