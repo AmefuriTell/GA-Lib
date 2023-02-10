@@ -1,7 +1,13 @@
 #include <bits/stdc++.h>
 #include "Individual.h"
 
+Individual::Individual(){}
+
 Individual::Individual(int arg_chromosome_length)
+{
+    set(arg_chromosome_length);
+}
+void Individual::set(int arg_chromosome_length)
 {
     chromosome_length = arg_chromosome_length;
 

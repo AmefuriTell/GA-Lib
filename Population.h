@@ -9,6 +9,7 @@ class Population
 public:
     Population(int arg_number_of_individuals, int arg_chromosome_length, int arg_max_generation);
     ~Population();
+    void sort(int l, int r);
 
     void print_all();
 

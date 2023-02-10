@@ -4,8 +4,11 @@
 class Individual
 {
 public:
+    Individual();
     Individual(int arg_chromosome_length);
     ~Individual();
+
+    void set(int arg_chromosome_length);
 
     void print();
     
@@ -18,10 +21,5 @@ private:
     void make_new_chromosome();
     void evaluate();
 };
-
-int comp_Individual(Individual a, Individual b)
-{
-    return a.score - b.score;
-}
 
 #endif
